@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* ── Variables ─────────────────────────────────────────────────────────── */
+:root {
+  --bg:      #020408;
+  --bg2:     #060c12;
+  --bg3:     #0a1520;
+  --accent:  #00f5ff;
+  --accent2: #ff003c;
+  --accent3: #7fff00;
+  --text:    #c8e8f0;
+  --dim:     #4a7080;
+  --border:  #0d2535;
+  --glow:    #00f5ff33;
+  --card:    #040d14;
+}
+
+/* ── Reset ─────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* Grid background */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(#0d2535 1px, transparent 1px),
+    linear-gradient(90deg, #0d2535 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: .4;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Scanline overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg, transparent, transparent 2px,
+    rgba(0,0,0,.08) 2px, rgba(0,0,0,.08) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+
+/* ── Cursor ─────────────────────────────────────────────────────────────── */
+.cursor {
+  position: fixed; width: 20px; height: 20px;
+  border: 1px solid var(--accent); border-radius: 50%;
+  pointer-events: none; z-index: 9999;
+  transition: transform .12s, background .2s;
+  transform: translate(-50%, -50%);
+}
+.cursor-dot {
+  position: fixed; width: 4px; height: 4px;
+  background: var(--accent); border-radius: 50%;
+  pointer-events: none; z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px var(--accent);
+}
+.cursor.hovered {
+  transform: translate(-50%, -50%) scale(1.8);
+  background: rgba(0, 245, 255, .1);
+}
+
+/* ── Animations ─────────────────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes blink       { 50% { opacity: 0; } }
+@keyframes pulse-border {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(127,255,0,.2); }
+  50%       { box-shadow: 0 0 0 6px rgba(127,255,0,0); }
+}
+@keyframes ticker {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes glowPulse {
+  0%, 100% { text-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent); }
+  50%       { text-shadow: 0 0 40px var(--accent), 0 0 80px var(--accent), 0 0 120px var(--accent); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ── Utility ────────────────────────────────────────────────────────────── */
+.fade-up   { animation: fadeUp .5s ease both; }
+.z-content { position: relative; z-index: 2; }

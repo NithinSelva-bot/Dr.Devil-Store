@@ -1,0 +1,176 @@
+[
+  {
+    "id": 1,
+    "name": "Arduino UNO R4 WiFi",
+    "price": 3499,
+    "oldPrice": 4200,
+    "description": "RA4M1 MCU + ESP32-S3 WiFi/BT combo. 48MHz, USB-C, LED matrix.",
+    "details": "The Arduino UNO R4 WiFi is the most powerful UNO board yet. It combines the RA4M1 microcontroller with an ESP32-S3 co-processor for seamless Wi-Fi and Bluetooth connectivity. Features a 12×8 LED matrix and USB-C for power and programming.",
+    "image": "🔵",
+    "category": "DEV BOARD",
+    "badge": "NEW",
+    "rating": 4.9,
+    "stock": 23,
+    "specs": [
+      "RA4M1 Cortex-M4 @ 48MHz",
+      "ESP32-S3 WiFi 802.11 b/g/n + BT 5.0",
+      "12×8 LED Matrix onboard",
+      "USB-C power & programming",
+      "14 digital I/O, 6 analog inputs",
+      "Compatible with all UNO shields"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "ESP32-S3 DevKit Pro",
+    "price": 899,
+    "oldPrice": null,
+    "description": "Xtensa LX7 dual-core, 240MHz, AI accelerator, BLE 5.0 + WiFi 6.",
+    "details": "The ESP32-S3 DevKit Pro is the ultimate IoT development platform. Powered by the dual-core Xtensa LX7 at 240MHz with a built-in AI accelerator for on-device ML. Supports BLE 5.0 and WiFi 6 for blazing-fast wireless performance.",
+    "image": "📡",
+    "category": "ESP MODULE",
+    "badge": "HOT",
+    "rating": 4.8,
+    "stock": 150,
+    "specs": [
+      "Dual-core Xtensa LX7 @ 240MHz",
+      "WiFi 6 (802.11ax) + BLE 5.0",
+      "Vector instructions for AI/ML",
+      "512KB SRAM, 384KB ROM",
+      "45 programmable GPIOs",
+      "USB OTG support"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Flipper Zero",
+    "price": 14999,
+    "oldPrice": 24999,
+    "description": "Multi-tool for pentesters. RF, NFC, IR, RFID, iButton, GPIO.",
+    "details": "Flipper Zero is a portable multi-tool for pentesters and geeks. It can interact with digital systems and emulate RFID, NFC, Bluetooth, IR, and sub-1GHz signals. Open-source firmware, active community, and endless possibilities.",
+    "image": "🔐",
+    "category": "CYBER TOOL",
+    "badge": "-40%",
+    "rating": 5.0,
+    "stock": 4,
+    "specs": [
+      "Sub-1GHz transceiver (315/433/868/915MHz)",
+      "125kHz RFID reader/emulator",
+      "NFC ISO-14443 A/B reader",
+      "Infrared transceiver",
+      "iButton (1-Wire) support",
+      "GPIO for hardware hacking",
+      "1.4-inch LCD color display"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Raspberry Pi 5",
+    "price": 7999,
+    "oldPrice": null,
+    "description": "BCM2712 quad-core A76 @ 2.4GHz, 8GB RAM, PCIe 2.0, USB 3.0.",
+    "details": "The Raspberry Pi 5 is the most powerful SBC from the Raspberry Pi Foundation. With a custom BCM2712 processor, PCIe interface, and dual 4K output — it is a full desktop replacement in the palm of your hand.",
+    "image": "🍓",
+    "category": "SBC",
+    "badge": null,
+    "rating": 4.9,
+    "stock": 8,
+    "specs": [
+      "BCM2712 quad-core Cortex-A76 @ 2.4GHz",
+      "8GB LPDDR4X RAM",
+      "PCIe 2.0 x1 interface",
+      "Dual USB 3.0 + dual USB 2.0",
+      "Dual 4K HDMI output",
+      "Gigabit Ethernet",
+      "GPIO 40-pin header"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "IoT Mega Kit v3",
+    "price": 2199,
+    "oldPrice": 2999,
+    "description": "ESP32 + 40+ sensors, OLED, relays, breadboard, full project guide.",
+    "details": "Everything you need to start with IoT. Includes an ESP32 board, 40+ sensors and modules, OLED display, relay modules, breadboards, jumper wires, and a 20-project guide PDF.",
+    "image": "🧰",
+    "category": "STARTER KIT",
+    "badge": null,
+    "rating": 4.7,
+    "stock": 55,
+    "specs": [
+      "ESP32 development board included",
+      "40+ sensors: DHT22, BMP280, PIR, Ultrasonic",
+      "0.96-inch OLED display",
+      "2-channel relay module",
+      "830-point breadboard + jumper wires",
+      "20 project guide PDF",
+      "Beginner to intermediate level"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "USB Rubber Ducky v3",
+    "price": 4499,
+    "oldPrice": null,
+    "description": "HID injection tool. DuckyScript 3.0, payload storage, programmable.",
+    "details": "The USB Rubber Ducky v3 masquerades as a keyboard and executes pre-programmed keystroke payloads at superhuman speed. DuckyScript 3.0 brings conditionals, variables, and advanced logic to payload development.",
+    "image": "🛡️",
+    "category": "CYBER TOOL",
+    "badge": "HOT",
+    "rating": 4.8,
+    "stock": 18,
+    "specs": [
+      "DuckyScript 3.0 support",
+      "USB-A form factor",
+      "32MB onboard payload storage",
+      "Multi-stage payload support",
+      "Variable & conditional logic",
+      "Cross-platform Win/Mac/Linux",
+      "Open-source community payloads"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "ESP32-CAM AI Vision",
+    "price": 599,
+    "oldPrice": 799,
+    "description": "OV2640 2MP camera, face detection, WiFi stream, microSD slot.",
+    "details": "Compact AI vision module with a 2MP OV2640 camera. Supports face detection, recognition, and live MJPEG streaming over WiFi. Perfect for security cameras, wildlife monitoring, and computer vision projects.",
+    "image": "📷",
+    "category": "IOT SENSOR",
+    "badge": null,
+    "rating": 4.5,
+    "stock": 67,
+    "specs": [
+      "OV2640 2MP CMOS sensor",
+      "Onboard WiFi 802.11 b/g/n",
+      "Face detection & recognition",
+      "MJPEG streaming support",
+      "MicroSD card slot up to 4GB",
+      "Flash LED for night capture",
+      "Ultra-compact 27×40.5mm"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "CC2531 Zigbee USB Dongle",
+    "price": 449,
+    "oldPrice": 699,
+    "description": "Zigbee sniffer & coordinator. Compatible with Zigbee2MQTT, Home Assistant.",
+    "details": "Versatile Zigbee device that works as a sniffer or Zigbee coordinator. Fully compatible with Zigbee2MQTT and Home Assistant for smart home automation.",
+    "image": "📶",
+    "category": "IOT MODULE",
+    "badge": null,
+    "rating": 4.6,
+    "stock": 80,
+    "specs": [
+      "CC2531 Zigbee 2.4GHz chip",
+      "USB-A form factor",
+      "Zigbee 2.4GHz IEEE 802.15.4",
+      "Works with Zigbee2MQTT",
+      "Home Assistant compatible",
+      "Packet sniffer mode",
+      "Up to 100m range open space"
+    ]
+  }
+]
